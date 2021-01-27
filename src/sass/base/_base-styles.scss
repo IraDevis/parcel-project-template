@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 22px;
+  border-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  display: block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $mobile) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
