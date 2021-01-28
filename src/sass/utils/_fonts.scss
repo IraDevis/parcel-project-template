@@ -1,0 +1,39 @@
+// Подключение шрифтов
+
+// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap');
+
+@font-face {
+  font-family: "Titan One";
+  src: local("Titan One"),
+    local("TitanOne"),
+    url("../fonts/TitanOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src:  local("DM Sans Regular"),
+    local("DMSans-Regular"),
+    url("../fonts/DMSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src:  local("DM Sans Medium"),
+    local("DMSans-Medium"),
+    url("../fonts/DMSans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src:  local("DM Sans Bold"),
+    local("DMSans-Bold"),
+    url("../fonts/DMSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
