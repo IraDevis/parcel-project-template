@@ -1,0 +1,32 @@
+.hero{
+    position: relative;
+    height: 502px;
+    background-color: $product-block-color-first;
+  
+    background-size: 171px;
+    background-repeat: no-repeat;
+   
+  .ice-cream{
+      position: absolute;
+      left: 117px;
+    z-index: 2;
+    width: 171px;
+    bottom: 0;
+  }
+    &-link{
+        position: absolute;
+        top: 83px;
+        left: 36px;
+        height: 344px;
+        width: 346px;
+        background-color: $accent-pink-color;
+        border-radius: 50%;
+    z-index: 1;
+    }
+ 
+ &-link h1{
+     margin: 0;
+ }
+
+
+}
