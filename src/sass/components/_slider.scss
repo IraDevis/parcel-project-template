@@ -1,0 +1,112 @@
+.review-section {
+  padding-top: 80px;
+  padding-bottom: 86px;
+  background-color: bisque;
+}
+
+.review-slide {
+  background-color: white;
+}
+
+.review-photo {
+  margin: 0px auto 29px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0px auto 19px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0px auto 15px;
+  }
+}
+
+.review-text-container {
+  position: relative;
+  background-color: $slider-bg-color;
+  padding: 43px 50px 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 47px 36px 28px 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 47px 54px 32px 59px;
+  }
+}
+
+.review-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0px;
+  color: $secondary-text-color;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #00000000 0px,
+    #00000000 27px,
+    $mark-color 27px,
+    $mark-color 27px,
+    #00000000 28px,
+    #00000000 31px
+  );
+  font-size: 12px;
+  padding-left: 7px;
+  padding-right: 16px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 44px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    padding-left: 28px;
+    padding-right: 35px;
+  }
+}
+
+.review-quotes {
+  position: absolute;
+  top: 28px;
+  left: 61px;
+}
+
+.review-dots {
+  margin: 28px auto 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 23px auto 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 20px auto 12px;
+  }
+}
+
+.review-reviewer {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0px;
+  color: $secondary-text-color;
+  font-size: 14px;
+  padding-left: auto;
+  padding-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
