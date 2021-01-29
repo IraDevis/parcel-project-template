@@ -1,0 +1,61 @@
+.page-footer {
+  //   background-color: $secondary-bg-color;
+  background-color: salmon;
+  outline: 3px solid red;
+
+  //   background-image: url(/src/images/desktop/products/milkshakes/milkshakes-335@2x.png);
+}
+
+/* socials-net */
+
+// .socials-net {
+//   display: flex;
+//   justify-content: center;
+
+//   &__item:not(:last-child) {
+//     margin-right: 10px;
+//   }
+
+//   &__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+
+//     transition: $transition-time $time-distribution-function;
+//   }
+
+//   &__link--gray {
+//     fill: $cliennts-light-gray-color;
+//   }
+
+//   &__link--white {
+//     fill: $white-color;
+//     background: rgba(255, 255, 255, 0.1);
+//   }
+
+//   &__link:hover,
+//   &__link:focus {
+//     fill: $white-color;
+//     background-color: $accent-blue-color;
+//   }
+// }
+
+//   &__socials-container {
+//     @media screen and (min-width: 480px) {
+//       width: 100%;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//       display: flex;
+//       justify-content: center;
+
+//       margin-bottom: 24px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       margin-bottom: 30px;
+//     }
+//   }
