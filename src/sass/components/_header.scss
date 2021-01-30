@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $accent-pink-color;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  z-index: -1;
   padding-top: 6px;
   padding-bottom: 6px;
   font-family: Titan One;
@@ -17,7 +17,7 @@
 }
 
 .logo-icon {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .nav-panel {
@@ -167,4 +167,26 @@
 
 .nav-link:hover {
   color: $accent-color;
+}
+
+.nav-list-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $main-color;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.nav-item-desktop {
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
