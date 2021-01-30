@@ -26,8 +26,8 @@
  @media screen and (min-resolution: 2dppx){
 .hero{
  background: url(./../images/tablet/hero/ice-cream-143@1x.png) 378px 100%,
- url(./../images/tablet/hero/carafe-124@1x.png) 34px 90%,
- url(./../images/tablet/hero/tasty-168@1x.png) 566px 100%,  radial-gradient(circle closest-side at 470px 193px,
+ 
+   radial-gradient(circle closest-side at 470px 193px,
                            $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
    
    
@@ -36,16 +36,14 @@
  @media screen and (min-resolution: 3dppx){
 .hero{
   background: url(./../images/tablet/hero/ice-cream-143@1x.png) 378px 100%,
- url(./../images/tablet/hero/carafe-124@1x.png) 34px 90%,
- url(./../images/tablet/hero/tasty-168@1x.png) 566px 100%,  radial-gradient(circle closest-side at 470px 193px,
+ 
+   radial-gradient(circle closest-side at 470px 193px,
                            $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
    
 } 
 }
  .hero{
  background: url(./../images/tablet/hero/ice-cream-143@1x.png) 61% bottom,
- url(./../images/tablet/hero/carafe-124@1x.png) 34px 90%,
- url(./../images/tablet/hero/tasty-168@1x.png) 95% bottom,
  radial-gradient(circle closest-side at 61% 193px,
                            $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
    
@@ -132,20 +130,25 @@
    height: 400px;
  }
  .hero-text{
-    .hero-right{
+   position: relative;
+    
      @media screen and (max-width: 767px){
+       .hero-right, .hero-bottom{
        display: none;
      }
    }
    @media screen and (min-width: $tablet){
       display: flex;
-justify-content: space-between;
+
   padding-top: 100px;
 
 
-   
+   .hero-left{
+     margin-right: 495px;
+   }
     .hero-right{
       text-align: right;
+      
     }
 //     .number{
 //       position: relative;
@@ -187,6 +190,16 @@ justify-content: space-between;
      font-size: 8px;
      line-height: 1.25;
      border-radius: 20px;
+   }
+   .img-tasty{
+     position: absolute;
+     bottom: -161px;
+     right:0 ;
+   }
+   .img-carafe{
+     position: absolute;
+     bottom: -133px;
+     left:0 ;
    }
    }
  }
