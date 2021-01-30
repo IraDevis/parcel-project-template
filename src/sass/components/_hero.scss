@@ -1,18 +1,14 @@
+
 .hero{
-    position: relative;
-    height: 502px;
+  width: 100%;
     background-color: $product-block-color-first;
-  
-    background-size: 171px;
+    background-size: cover;
     background-repeat: no-repeat;
-   
-  .ice-cream{
-      position: absolute;
-      left: 117px;
-    z-index: 2;
-    width: 171px;
-    bottom: 0;
-  }
+     position: relative;
+   height: 502px;
+
+    
+
     &-link{
         position: absolute;
         top: 83px;
@@ -21,12 +17,85 @@
         width: 346px;
         background-color: $accent-pink-color;
         border-radius: 50%;
-    z-index: 1;
+
     }
- 
- &-link h1{
-     margin: 0;
- }
+.hero-text{
+ .hero-left {
+  font-family: "Titan One";
+}
+
+  z-index: 3;
+   position: absolute;
+  left:20px;
+  
+   top: 193px;
+   h1{
+     font-weight: 400;
+     font-size: 26px;
+     line-height: 1.15;
+ letter-spacing: 0.04em;
+     text-transform: uppercase;
+     color:$main-color;
+   }
+   .heading{
+     font-size: 48px;
+     line-height: 1;
+     color: $accent-color;
+   }
+   button{
+     margin-top: 19px;
+       font-family: "DM Sans";
+       font-weight: 400;
+     font-size: 8px;
+     line-height: 1.25;
+     border-radius: 20px;
+   }
+       .btn-product{
+         margin-right: 8px;
+       background-color: $accent-color;
+       color:$main-color;
+      padding:7px 15px 7px 15px;
+     }
+         .btn-made{
+       background-color:$main-color;
+       color: $accent-color;
+      padding:7px 13px 7px 13px;
+     }
+     .hero-left{
+        width: 218px;
+     }
+ } 
+
+  .ice-cream{
+    position: absolute;
+      left: 117px;
+    width: 171px;
+    bottom: 0;
+    z-index: 2;
+  }
 
 
 }
+ .hero-text{
+   
+   .hero-right{
+     @media screen and (max-width:767px){
+       display: none;
+       li{
+         font-size:28px;
+         line-height: 1.14;
+         color: $accent-color;
+       }
+       li span{
+         font-size:8px;
+         line-height: 1.25;
+         color:$main-color;
+       }
+     }
+   }
+   @media screen and (min-width:$tablet){
+  
+     display: flex;
+     justify-content: space-between;
+   }
+ }
