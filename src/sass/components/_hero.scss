@@ -1,34 +1,91 @@
 
+
+ 
+ @media screen and (min-resolution: 2dppx){
 .hero{
-  width: 100%;
-    background-color: $product-block-color-first;
-    background-size: cover;
-    background-repeat: no-repeat;
-     position: relative;
-   height: 502px;
-
-    
-
-    &-link{
-        position: absolute;
-        top: 83px;
-        left: 36px;
-        height: 344px;
-        width: 346px;
-        background-color: $accent-pink-color;
-        border-radius: 50%;
-
-    }
-.hero-text{
- .hero-left {
-  font-family: "Titan One";
+ background: url(./../images/mobile/hero/ice-cream-171@2x.png) 117px 100%, radial-gradient(circle closest-side at 210px 250px,
+                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
+   
 }
+}
+ @media screen and (min-resolution: 3dppx){
+.hero{
+ background: url(./../images/mobile/hero/ice-cream-171@3x.png) 117px 100%, radial-gradient(circle closest-side at 210px 250px,
+                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
+   
+}
+}
+ .hero{
+ background: url(./../images/mobile/hero/ice-cream-171@1x.png) 117px 100%, radial-gradient(circle closest-side at 210px 250px,
+                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
+  }  
 
-  z-index: 3;
-   position: absolute;
-  left:20px;
-  
-   top: 193px;
+@media screen and (min-width: $tablet){
+
+
+ @media screen and (min-resolution: 2dppx){
+.hero{
+ background: url(./../images/tablet/hero/ice-cream-143@1x.png) 378px 100%,
+ url(./../images/tablet/hero/carafe-124@1x.png) 34px 90%,
+ url(./../images/tablet/hero/tasty-168@1x.png) 566px 100%,  radial-gradient(circle closest-side at 470px 193px,
+                           $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
+   
+   
+}
+}
+ @media screen and (min-resolution: 3dppx){
+.hero{
+  background: url(./../images/tablet/hero/ice-cream-143@1x.png) 378px 100%,
+ url(./../images/tablet/hero/carafe-124@1x.png) 34px 90%,
+ url(./../images/tablet/hero/tasty-168@1x.png) 566px 100%,  radial-gradient(circle closest-side at 470px 193px,
+                           $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
+   
+} 
+}
+ .hero{
+ background: url(./../images/tablet/hero/ice-cream-143@1x.png) 61% bottom,
+ url(./../images/tablet/hero/carafe-124@1x.png) 34px 90%,
+ url(./../images/tablet/hero/tasty-168@1x.png) 95% bottom,
+ radial-gradient(circle closest-side at 61% 193px,
+                           $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
+   
+}
+   
+}
+@media screen and (min-width: $desktop){
+ 
+
+
+ @media screen and (min-resolution: 2dppx){
+.hero{
+ background: url(./../images/desktop/hero/ice-cream-236@2x.png) 378px 100%, radial-gradient(circle closest-side at 210px 250px,
+                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
+   
+}
+}
+ @media screen and (min-resolution: 3dppx){
+.hero{
+ background: url(./../images/desktop/hero/ice-cream-236@3x.png) 378px 100%, radial-gradient(circle closest-side at 210px 250px,
+                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
+   
+} 
+}
+  .hero{
+ background: url(./../images/desktop/hero/ice-cream-236@1x.png) 378px 100%, radial-gradient(circle closest-side at 210px 250px,
+                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
+  }
+}
+.hero{
+
+
+   background-repeat: no-repeat;
+   
+   height: 502px;
+ 
+.hero-text{
+  font-family: "Titan One";
+
+ padding-top: 193px;
    h1{
      font-weight: 400;
      font-size: 26px;
@@ -54,7 +111,7 @@
          margin-right: 8px;
        background-color: $accent-color;
        color:$main-color;
-      padding:7px 15px 7px 15px;
+      padding:9px 15px 9px 15px;
      }
          .btn-made{
        background-color:$main-color;
@@ -66,36 +123,71 @@
      }
  } 
 
-  .ice-cream{
-    position: absolute;
-      left: 117px;
-    width: 171px;
-    bottom: 0;
-    z-index: 2;
-  }
+
 
 
 }
+.hero{
+ @media screen and (min-width:$tablet) {
+   height: 400px;
+ }
  .hero-text{
-   
-   .hero-right{
-     @media screen and (max-width:767px){
+    .hero-right{
+     @media screen and (max-width: 767px){
        display: none;
-       li{
+     }
+   }
+   @media screen and (min-width: $tablet){
+      display: flex;
+justify-content: space-between;
+  padding-top: 100px;
+
+
+   
+    .hero-right{
+      text-align: right;
+    }
+//     .number{
+//       position: relative;
+     
+//     }
+// .number-link{
+
+//   position: absolute;
+//   top: -10%;
+//   right:-25%;
+//   width: 16px;
+//   height: 16px;
+//   fill: $main-color;
+// }
+   
+ 
+       .number p{
          font-size:28px;
          line-height: 1.14;
          color: $accent-color;
        }
-       li span{
+     .number span{
+       font-family: "DM Sans";
          font-size:8px;
          line-height: 1.25;
          color:$main-color;
        }
-     }
+   h1{
+     font-size: 22px;
+     line-height: 1.14;
+ letter-spacing: 0.04em; 
    }
-   @media screen and (min-width:$tablet){
-  
-     display: flex;
-     justify-content: space-between;
+   .heading{
+     font-size:34px;
+     line-height: 1.1;
    }
+   button{
+     margin-top: 20px;
+     font-size: 8px;
+     line-height: 1.25;
+     border-radius: 20px;
+   }
+   }
+ }
  }
