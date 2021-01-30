@@ -1,9 +1,9 @@
-<!-- <section class="collage-test-section">
+<section class="collage-test-section">
     <div class="container">
 
 
     </div>
-</section> -->
+</section>
 
 <section class="review-section">
     <div class="container">
@@ -15,14 +15,31 @@
                     ./images/desktop/made/pictures-1280@3x.webp 3x"
                     type="image/webp"
                     media="(min-width: 1200px)">
+                <source srcset="./images/desktop/made/pictures-1280@1x.jpg 1x, 
+                    ./images/desktop/made/pictures-1280@2x.jpg 2x, 
+                    ./images/desktop/made/pictures-1280@3x.jpg 3x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)">
                 <source srcset="./images/tablet/made/pictures-786@1x.webp 1x, 
                     ./images/tablet/made/pictures-786@2x.webp 2x, 
                     ./images/tablet/made/pictures-786@3x.webp 3x"
                     type="image/webp"
                     media="(min-width: 768px)">
-                <img src="./images/mobile/made/pictures-364@1x.webp" 
+                <source srcset="./images/tablet/made/pictures-786@1x.jpg 1x, 
+                    ./images/tablet/made/pictures-786@2x.jpg 2x, 
+                    ./images/tablet/made/pictures-786@3x.jpg 3x" 
+                    type="image/jpeg" media="(min-width: 768px)">
+                <source srcset="./images/mobile/made/pictures-364@1x.webp 1x,
+                    ./images/mobile/made/pictures-364@2x.webp 2x, 
+                    ./images/mobile/made/pictures-364@3x.webp 3x" 
+                    type="image/webp">
+                <!-- <img src="./images/mobile/made/pictures-364@1x.webp" 
                     srcset="./images/mobile/made/pictures-364@2x.webp 2x, 
                     ./images/mobile/made/pictures-364@3x.webp 3x" 
+                    alt="Коллаж" height="100%"> -->
+                <img src="./images/mobile/made/pictures-364@1x.jpg" 
+                    srcset="./images/mobile/made/pictures-364@2x.jpg 2x, 
+                    ./images/mobile/made/pictures-364@3x.jpg 3x" 
                     alt="Коллаж" height="100%">
             </picture>
         </div>
