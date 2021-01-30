@@ -1,5 +1,13 @@
 .section-products {
   padding: 121px 0px 98px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 122px 0px 112px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 127px 0px 119px;
+  }
 }
 
 .products-list {
