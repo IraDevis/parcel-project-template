@@ -8,22 +8,24 @@
   .hero-circle{
    position: absolute;
    top: 75px;
-   left:18px;
+   left:36px;
   
    background-color: $accent-pink-color;
    border-radius:50% ;
  height: 344px;
  width: 344px;
+
+ 
+ }
  .ice{
    position: absolute;
    padding-left:81px ;
-   bottom: -83px;
- }
+   bottom:0%;
  }
  .hero-left{
    position: absolute;
    z-index: 2;
-   left: 0px;
+   left: 20px;
  }
 .hero-text{
    height: 502px;
@@ -79,19 +81,27 @@
    }
  @media screen and (min-width:$tablet) {
    height: 400px;
-
+  
  .hero-text{
    position: relative;
           display: flex;
 height: 400px;
   padding-top: 100px;
-  
+   h1{
+     font-size: 22px;
+     line-height: 1.14;
+ letter-spacing: 0.04em; 
+   }
+   .heading{
+     font-size:34px;
+     line-height: 1.1;
+   }
  }
 
 .hero-circle{
    position: absolute;
    top: 31px;
-   left:307px;
+   left:273px;
   
    background-color: $accent-pink-color;
    border-radius:50% ;
@@ -101,33 +111,32 @@ height: 400px;
 }
  .ice{
    position: absolute;
-   padding-left:378px ;
+   padding-left:344px ;
    bottom: 0%;
  }
-   .hero-left{
-     margin-right: 495px;
-   }
+  
     .hero-right{
       text-align: right;
       
     }
-//     .number{
-//       position: relative;
+    .number{
+      position: relative;
      
-//     }
-// .number-link{
-
-//   position: absolute;
-//   top: -10%;
-//   right:-25%;
-//   width: 16px;
-//   height: 16px;
-//   fill: $main-color;
-// }
+    }
+.number-link{
+z-index: 1;
+  position: absolute;
+  top: 0%;
+  right:-25%;
+  width: 16px;
+  height: 16px;
+  fill: $main-color;
+}
    
  .hero-right{
    padding-left:657px ;
        .number p{
+         z-index: 88;
          font-size:28px;
          line-height: 1.14;
          color: $accent-color;
@@ -139,31 +148,69 @@ height: 400px;
          color:$main-color;
        }
        }
-//    h1{
-//      font-size: 22px;
-//      line-height: 1.14;
-//  letter-spacing: 0.04em; 
-//    }
-//    .heading{
-//      font-size:34px;
-//      line-height: 1.1;
-//    }
-//    button{
-//      margin-top: 20px;
-//      font-size: 8px;
-//      line-height: 1.25;
-//      border-radius: 20px;
-//    }
-//    .img-tasty{
-//      position: absolute;
-//      bottom: -161px;
-//      right:0 ;
-//    }
-//    .img-carafe{
-//      position: absolute;
-//      bottom: -133px;
-//      left:0 ;
-//    }
-   
+ 
+
+   .img-tasty{
+     position: absolute;
+     bottom: 0%;
+     right:0 ;
+   }
+   .img-carafe{
+     position: absolute;
+     bottom: 20px;
+     left:0 ;
+     display: flex;
+    
+   }
+   .img-carafe li:last-child{
+     margin-top: 47px;
+   }
+   .lorem{
+     width: 114px;
+     font-family: "DM Sans";
+         font-size:8px;
+         line-height: 1.25;
+         color:$main-color;
+            margin-bottom: 7px;
+   }
+   .link{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+     width: 18px;
+     height: 18px;
+     border-radius: 50%;
+     background-color: $main-color;
+  
+  svg{
+    width: 7px;
+  }
+   }
+ }
+ @media screen and (min-width:$desktop){
+   height: 665px;
+   .hero-circle{
+   position: absolute;
+   top: 52px;
+   left:360px;
+  
+   background-color: $accent-pink-color;
+   border-radius:50% ;
+ height: 538px;
+ width: 538px;
+
+ 
+ }
+   .hero-right{
+     padding-left: 700px;
+   }
+ .ice{
+   position: absolute;
+   padding-left:476px ;
+   bottom:0%;
+ }
+ .hero-text{
+   height: 665px;
+ }
  }
  }
