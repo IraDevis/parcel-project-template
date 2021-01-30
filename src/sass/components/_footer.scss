@@ -1,40 +1,110 @@
+//  @media screen and (min-width: $mobile) {
+//     width: 320px;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     width: 768px;
+//     padding-left: 34px;
+//     padding-right: 34px;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     width: 1200px;
+//     padding-left: 75px;
+//     padding-right: 75px;
+//   }
+
 .page-footer {
   //   background-color: $secondary-bg-color;
-  background-color: salmon;
+  background-color: rgb(208, 190, 148);
   outline: 3px solid red;
 
-  //   background-image: url(/src/images/desktop/products/milkshakes/milkshakes-335@2x.png);
+  @media screen and (min-width: $mobile) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  //   @media screen and (min-width: $desktop) {
+  //     width: 1200px;
+  //   }
+  &__slogan {
+    @media screen and (min-width: $mobile) {
+      width: 234px;
+      margin-bottom: 43px;
+      margin-right: 66px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    color: $accent-pink-color;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  &__desc {
+    font-weight: 400;
+    color: $accent-color;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+  &__socials-container {
+    width: 153px;
+
+    @media screen and (min-width: $mobile) {
+      margin-left: auto;
+    }
+  }
 }
 
 /* socials-net */
 
-// .socials-net {
-//   display: flex;
-//   justify-content: center;
+.socials-net {
+  display: flex;
+  justify-content: center;
 
-//   &__item:not(:last-child) {
-//     margin-right: 10px;
-//   }
+  &__github {
+    width: 20px;
+    height: 20px;
+  }
+  &__telegram {
+    width: 20px;
+    height: 15px;
+  }
+  &__facebook {
+    width: 10px;
+    height: 20px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 28px;
+  }
 
-//   &__link {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
 
-//     transition: $transition-time $time-distribution-function;
-//   }
-
-//   &__link--gray {
-//     fill: $cliennts-light-gray-color;
-//   }
-
-//   &__link--white {
-//     fill: $white-color;
-//     background: rgba(255, 255, 255, 0.1);
-//   }
+  &__link--bordo {
+    // fill: $accent-pink-color;
+    background: $accent-pink-color;
+  }
+  //   &__link:hover,
+  //   &__link:focus {
+  //     fill: $white-color;
+  //     background-color: $accent-blue-color;
+  //   }
+}
 
 //   &__link:hover,
 //   &__link:focus {
@@ -43,19 +113,19 @@
 //   }
 // }
 
-//   &__socials-container {
-//     @media screen and (min-width: 480px) {
-//       width: 100%;
-//     }
-
-//     @media screen and (min-width: 768px) {
-//       display: flex;
-//       justify-content: center;
-
-//       margin-bottom: 24px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//       margin-bottom: 30px;
-//     }
+// &__socials-container {
+//   @media screen and (min-width: 480px) {
+//     width: 100%;
 //   }
+
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     justify-content: center;
+
+//     margin-bottom: 24px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 30px;
+//   }
+// }

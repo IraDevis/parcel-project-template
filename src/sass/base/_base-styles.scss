@@ -1,3 +1,7 @@
+body {
+  font-family: DM Sans;
+  font-weight: 500;
+}
 * {
   margin: 0;
   padding: 0;
@@ -41,9 +45,24 @@ img {
 
   @media screen and (min-width: $tablet) {
     width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 1200px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
