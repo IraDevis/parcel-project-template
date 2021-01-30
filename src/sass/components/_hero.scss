@@ -1,89 +1,35 @@
 
-
- 
- @media screen and (min-resolution: 2dppx){
 .hero{
- background: url(./../images/mobile/hero/ice-cream-171@2x.png) 117px 100%, radial-gradient(circle closest-side at 210px 250px,
-                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
-   
-}
-}
- @media screen and (min-resolution: 3dppx){
-.hero{
- background: url(./../images/mobile/hero/ice-cream-171@3x.png) 117px 100%, radial-gradient(circle closest-side at 210px 250px,
-                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
-   
-}
-}
- .hero{
- background: url(./../images/mobile/hero/ice-cream-171@1x.png) 117px 100%, radial-gradient(circle closest-side at 210px 250px,
-                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
-  }  
-
-@media screen and (min-width: $tablet){
-
-
- @media screen and (min-resolution: 2dppx){
-.hero{
- background: url(./../images/tablet/hero/ice-cream-143@1x.png) 378px 100%,
- 
-   radial-gradient(circle closest-side at 470px 193px,
-                           $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
-   
-   
-}
-}
- @media screen and (min-resolution: 3dppx){
-.hero{
-  background: url(./../images/tablet/hero/ice-cream-143@1x.png) 378px 100%,
- 
-   radial-gradient(circle closest-side at 470px 193px,
-                           $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
-   
-} 
-}
- .hero{
- background: url(./../images/tablet/hero/ice-cream-143@1x.png) 61% bottom,
- radial-gradient(circle closest-side at 61% 193px,
-                           $accent-pink-color  60px,   $accent-pink-color  160px, $product-block-color-first 50px);
-   
-}
-   
-}
-@media screen and (min-width: $desktop){
- 
-
-
- @media screen and (min-resolution: 2dppx){
-.hero{
- background: url(./../images/desktop/hero/ice-cream-236@2x.png) 378px 100%, radial-gradient(circle closest-side at 210px 250px,
-                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
-   
-}
-}
- @media screen and (min-resolution: 3dppx){
-.hero{
- background: url(./../images/desktop/hero/ice-cream-236@3x.png) 378px 100%, radial-gradient(circle closest-side at 210px 250px,
-                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
-   
-} 
-}
-  .hero{
- background: url(./../images/desktop/hero/ice-cream-236@1x.png) 378px 100%, radial-gradient(circle closest-side at 210px 250px,
-                           $accent-pink-color  60px,   $accent-pink-color  175px, $product-block-color-first 50px);
-  }
-}
-.hero{
-
-
+  width: 100;
    background-repeat: no-repeat;
-   
+   background-color: $product-block-color-first;
    height: 502px;
- 
+ position: relative;
+  .hero-circle{
+   position: absolute;
+   top: 75px;
+   left:18px;
+  
+   background-color: $accent-pink-color;
+   border-radius:50% ;
+ height: 344px;
+ width: 344px;
+ .ice{
+   position: absolute;
+   padding-left:81px ;
+   bottom: -83px;
+ }
+ }
+ .hero-left{
+   position: absolute;
+   z-index: 2;
+   left: 0px;
+ }
 .hero-text{
+   height: 502px;
   font-family: "Titan One";
-
  padding-top: 193px;
+
    h1{
      font-weight: 400;
      font-size: 26px;
@@ -126,23 +72,38 @@
 
 }
 .hero{
- @media screen and (min-width:$tablet) {
-   height: 400px;
- }
- .hero-text{
-   position: relative;
-    
      @media screen and (max-width: 767px){
        .hero-right, .hero-bottom{
        display: none;
      }
    }
-   @media screen and (min-width: $tablet){
-      display: flex;
+ @media screen and (min-width:$tablet) {
+   height: 400px;
 
+ .hero-text{
+   position: relative;
+          display: flex;
+height: 400px;
   padding-top: 100px;
+  
+ }
 
+.hero-circle{
+   position: absolute;
+   top: 31px;
+   left:307px;
+  
+   background-color: $accent-pink-color;
+   border-radius:50% ;
+ height: 324px;
+ width: 324px;
 
+}
+ .ice{
+   position: absolute;
+   padding-left:378px ;
+   bottom: 0%;
+ }
    .hero-left{
      margin-right: 495px;
    }
@@ -164,7 +125,8 @@
 //   fill: $main-color;
 // }
    
- 
+ .hero-right{
+   padding-left:657px ;
        .number p{
          font-size:28px;
          line-height: 1.14;
@@ -176,31 +138,32 @@
          line-height: 1.25;
          color:$main-color;
        }
-   h1{
-     font-size: 22px;
-     line-height: 1.14;
- letter-spacing: 0.04em; 
-   }
-   .heading{
-     font-size:34px;
-     line-height: 1.1;
-   }
-   button{
-     margin-top: 20px;
-     font-size: 8px;
-     line-height: 1.25;
-     border-radius: 20px;
-   }
-   .img-tasty{
-     position: absolute;
-     bottom: -161px;
-     right:0 ;
-   }
-   .img-carafe{
-     position: absolute;
-     bottom: -133px;
-     left:0 ;
-   }
-   }
+       }
+//    h1{
+//      font-size: 22px;
+//      line-height: 1.14;
+//  letter-spacing: 0.04em; 
+//    }
+//    .heading{
+//      font-size:34px;
+//      line-height: 1.1;
+//    }
+//    button{
+//      margin-top: 20px;
+//      font-size: 8px;
+//      line-height: 1.25;
+//      border-radius: 20px;
+//    }
+//    .img-tasty{
+//      position: absolute;
+//      bottom: -161px;
+//      right:0 ;
+//    }
+//    .img-carafe{
+//      position: absolute;
+//      bottom: -133px;
+//      left:0 ;
+//    }
+   
  }
  }
