@@ -176,20 +176,13 @@
           color: $main-color;
         }
 
-        .number-circle1 {
-          width: 16px;
-          height: 16px;
-        }
-
+        .number-circle1,
         .number-circle2 {
           width: 16px;
           height: 16px;
         }
 
-        .number-link1 {
-          position: relative;
-        }
-
+        .number-link1,
         .number-link2 {
           position: relative;
         }
@@ -313,8 +306,6 @@
 
             width: 30px;
             height: 30px;
-
-
           }
 
           .number p {
