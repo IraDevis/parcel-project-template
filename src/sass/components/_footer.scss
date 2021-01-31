@@ -197,6 +197,12 @@
   color: $accent-color;
 }
 
+.footer-tel:hover,
+.footer-tel:focus {
+  transition: $time-function;
+  // color: $menu-border-color;
+}
+
 /* socials-net */
 .socials-net {
   display: flex;
@@ -232,6 +238,8 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
+
+  transition: $time-function;
 
   @media screen and (min-width: $tablet) {
     width: 34px;
