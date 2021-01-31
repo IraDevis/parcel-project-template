@@ -1,0 +1,211 @@
+.page-header {
+  @include position(absolute);
+}
+
+.header-container {
+  position: relative;
+  @extend %flex-linecenter;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.logo {
+  @extend %flex-linecenter;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: Titan One;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: $accent-color;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.logo-icon {
+  margin-right: 20px;
+}
+
+.backdrop {
+  @include position(fixed);
+  top: 0;
+  right: 0;
+  padding: 0;
+  background-color: (rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(2px);
+  overflow-y: scroll;
+  opacity: 1;
+  transition: opacity 250ms $time-function;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-hidden .menu {
+    transform: translateX(100%);
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: $menu-bg-color;
+  box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.25);
+
+  transform: translateX(0);
+  transition: transform 250ms $time-function;
+
+  @media screen and (min-width: $tablet) {
+    width: 254px;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: transparent;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.buy-button {
+  @extend %flex-linecenter;
+  justify-content: center;
+  width: 209px;
+  height: 44px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  color: $accent-color;
+  outline: transparent;
+
+  transition: background-color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-btn-color-focus;
+  }
+
+  & svg {
+    margin-left: 22px;
+    margin-top: 3px;
+    stroke: $accent-color;
+  }
+}
+
+.nav-buy-button {
+  @extend %flex-linecenter;
+  justify-content: center;
+  width: 160px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  color: $accent-color;
+  outline: transparent;
+
+  transition: background-color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-btn-color-focus;
+  }
+
+  & svg {
+    margin-left: 18px;
+    margin-top: 3px;
+    stroke: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav-list {
+  margin-top: 19px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $main-color;
+}
+
+.nav-item {
+  width: 100%;
+  height: 42px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  border-top: 1px solid $menu-border-color;
+  border-bottom: 1px solid $menu-border-color;
+}
+
+.nav-link {
+  transition: color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.nav-link-desktop {
+  transition: color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.nav-list-desktop {
+  @extend %flex-linecenter;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $main-color;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.nav-item-desktop:not(:last-child) {
+  margin-right: 35px;
+}
