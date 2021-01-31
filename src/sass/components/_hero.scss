@@ -25,7 +25,6 @@
  .hero-left{
    position: absolute;
    z-index: 2;
-   left: 20px;
  }
 .hero-text{
    height: 502px;
@@ -58,11 +57,23 @@
        background-color: $accent-color;
        color:$main-color;
       padding:9px 15px 9px 15px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer
      }
          .btn-made{
        background-color:$main-color;
        color: $accent-color;
       padding:7px 13px 7px 13px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer
+     }
+     .btn-product:hover,
+     .btn-product:focus{
+       background: $main-btn-color-focus;
+     }
+        .btn-made:hover,
+    .btn-made:focus{
+       background: $mark-color;
      }
      .hero-left{
         width: 218px;
@@ -78,6 +89,9 @@
        .hero-right, .hero-bottom{
        display: none;
      }
+      .hero-left{
+   left: 20px;
+ }
    }
  @media screen and (min-width:$tablet) {
    height: 400px;
@@ -119,34 +133,53 @@ height: 400px;
       text-align: right;
       
     }
-    .number{
-      position: relative;
-     
-    }
-.number-link{
-z-index: 1;
-  position: absolute;
-  top: 0%;
-  right:-25%;
-  width: 16px;
-  height: 16px;
-  fill: $main-color;
-}
-   
+
  .hero-right{
-   padding-left:657px ;
+   margin-left:648px ;
+   .number:first-child{
+     margin-bottom:13px;
+   }
        .number p{
-         z-index: 88;
+     
          font-size:28px;
          line-height: 1.14;
          color: $accent-color;
        }
-     .number span{
+     .number p span{
+       display: block;
        font-family: "DM Sans";
          font-size:8px;
          line-height: 1.25;
          color:$main-color;
        }
+    .number-circle1{
+      position: absolute;
+          right: 0%;
+          top: 24%;
+      background-color: $main-color;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+     
+    }
+     .number-circle2{
+       position: absolute;
+       right: 0%;
+        top:38%;
+      background-color: $main-color;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+     
+    }
+    .number-link1{
+      position: relative;
+    }
+     .number-link2{
+      position: relative;
+    }
        }
  
 
@@ -201,16 +234,100 @@ z-index: 1;
 
  
  }
-   .hero-right{
-     padding-left: 700px;
-   }
+
+
  .ice{
    position: absolute;
    padding-left:476px ;
    bottom:0%;
  }
  .hero-text{
+
    height: 665px;
+      button{
+     margin-top: 25px;
+     font-size: 14px;
+     line-height: 1.28;
+   }
+       .btn-product{
+         margin-right: 15px;
+      padding:11px 24px 11px 24px;
+     }
+         .btn-made{
+      padding:11px 20px 11px 20px;
+     }
+    .hero-left{
+      width: 277px;
+ }
+   .hero-right{
+     margin-left: 957px;
+   }
+     h1{
+     font-size: 38px;
+     line-height: 1.16;
+ letter-spacing: 0.04em; 
+   }
+   .heading{
+     font-size:58px;
+     line-height: 0.89;
+   }
+   .hero-right{
+  .number-circle1{
+    
+     
+          top: 14%;
+    
+      width: 30px;
+      height: 30px;
+  
+     
+    }
+     .number-circle2{
+
+ 
+        top:27%;
+ 
+      width: 30px;
+      height: 30px;
+  
+     
+    }
+       .number p{
+     
+         font-size:46px;
+         line-height: 1.15;
+         color: $accent-color;
+       }
+     .number span{
+         font-size:14px;
+         line-height: 1.28;
+         color:$main-color;
+       }
+       }
+
+   .img-carafe{
+     position: absolute;
+     bottom: 40px;
+     left:0 ;
+     display: flex;
+    
+   }
+   .img-carafe li:last-child{
+     margin-top: 56px;
+   }
+   .lorem{
+     width: 200px;
+         font-size:14px;
+         line-height: 1.43;
+            margin-bottom: 20px;
+   }
+   .link{
+     width: 26px;
+     height: 26px;
+  svg{
+    width: 7px;
+  }
+   }
  }
  }
  }
