@@ -3,11 +3,11 @@
   background-color: $product-block-color-first;
   height: 502px;
 
-  .ice {
-    position: absolute;
-    left: 117px;
-    bottom: 0%;
-  }
+  // .ice {
+  //   position: absolute;
+  //   left: 117px;
+  //   bottom: 0%;
+  // }
 
   .hero-left {
     position: absolute;
@@ -89,11 +89,7 @@
 
     }
 
-    .ice {
-      position: absolute;
-      left: 117px;
-      bottom: 0;
-    }
+
   }
 
 
@@ -166,6 +162,11 @@
       width: 344px;
     }
 
+    .ice {
+      position: absolute;
+      left: 117px;
+      bottom: 0;
+    }
   }
 }
 
