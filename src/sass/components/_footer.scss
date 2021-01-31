@@ -13,21 +13,24 @@
   @media screen and (max-width: 767px) {
     // width: 320px;
     width: 100%;
+    padding-bottom: 43px;
   }
 
   @media screen and (min-width: $tablet) {
     // width: 768px;
     padding-top: 91px;
+    padding-bottom: 91px;
   }
 
   @media screen and (min-width: $desktop) {
     // width: 1200px;
     padding-top: 98px;
+    padding-bottom: 97px;
   }
 
   &__container {
     position: relative;
-    border-bottom: 1px solid $mark-color;
+    // border-bottom: 1px solid $mark-color;
   }
 
   &__slogan {
@@ -111,22 +114,25 @@
   }
 
   &__post-footer {
-    width: 150px;
+    // width: 150px;
 
     margin-left: auto;
     margin-right: auto;
 
     padding-top: 29px;
     padding-bottom: 18px;
+    border-top: 1px solid $mark-color;
+    background-color: $secondary-bg-color;
 
     @media screen and (min-width: $tablet) {
-      width: 276px;
+      // width: 276px;
       padding-top: 29px;
       padding-bottom: 35px;
     }
     @media screen and (min-width: $desktop) {
       padding-top: 9px;
       padding-bottom: 10px;
+      // width: 100%;
     }
   }
 
@@ -142,8 +148,12 @@
     color: $main-text-color;
 
     @media screen and (min-width: $tablet) {
-      width: 276px;
+      // width: 276px;
       line-height: 1.8;
+      text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: center;
     }
   }
 }
