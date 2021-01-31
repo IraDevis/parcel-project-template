@@ -1,0 +1,92 @@
+<header class="page-header">
+  <div class="container header-container">
+    <a class="logo" href="#hero">
+      <svg class="logo-icon" width="50" height="50">
+        <use href="./images/sprite.svg#Logo1"></use>
+      </svg>
+      <span>icecream</span>
+    </a>
+    <nav class="nav-panel">
+      <ul class="nav-list-desktop">
+        <li class="nav-item-desktop">
+          <a class="nav-link-desktop" href="#hero">Home</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a class="nav-link-desktop" href="#about">About us</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a class="nav-link-desktop" href="#made">How it’s made?</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a class="nav-link-desktop" href="#products">Our products</a>
+        </li>
+        <li class="nav-item-desktop">
+          <a class="nav-link-desktop" href="#footer">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      class="container menu-container backdrop is-hidden"
+      id="menu-container"
+      data-modal
+    >
+      <div class="modal menu">
+        <button
+          type="button"
+          class="close-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-modal-close
+        >
+          <svg
+            width="20"
+            height="14"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-close" href="./images/sprite.svg#Close"></use>
+          </svg>
+        </button>
+        <button type="button" class="buy-button">
+          <span>Buy now</span>
+          <svg width="7" height="10">
+            <use href="./images/sprite.svg#Vector"></use>
+          </svg>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Our products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="menu-button"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-modal-open
+    >
+      <svg width="20" height="14" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/sprite.svg#Burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="nav-buy-button">
+      Buy now
+      <svg width="7" height="10">
+        <use href="./images/sprite.svg#Vector"></use>
+      </svg>
+    </button>
+  </div>
+</header>
