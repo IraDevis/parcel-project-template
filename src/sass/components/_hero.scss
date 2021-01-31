@@ -3,28 +3,53 @@
     background-color: $product-block-color-first;
     height: 502px;
 
-    .hero-discription {
-      position: relative;
+    @media screen and(max-width:345px) {
+      background-image: url(/images/mobile/hero/Ellipse4.png);
+      background-position: bottom 80px right -50px;
+
+      .hero-discription {
+        position: relative;
+        background-image: url(/images/mobile/hero/ice-cream-171@1x.png);
+        background-position: bottom 0 right 50px;
+        background-repeat: no-repeat;
+      }
+
+      .ice {
+        display: none;
+      }
     }
 
-    .hero-circle {
-      position: absolute;
+    @media screen and(min-width:346px) {
+      .hero-discription {
+        position: relative;
+      }
 
-      top: 75px;
-      left: 36px;
+      .hero-circle {
+        position: absolute;
 
-      background-color: $accent-pink-color;
-      border-radius: 50%;
-      height: 344px;
-      width: 344px;
+        top: 75px;
+        left: 36px;
 
+        background-color: $accent-pink-color;
+        border-radius: 50%;
+        height: 344px;
+        width: 344px;
+
+      }
+
+      .ice {
+        position: absolute;
+        left: 117px;
+        bottom: 0;
+      }
     }
 
-    .ice {
-      position: absolute;
-      left: 117px;
-      bottom: 0%;
-    }
+
+
+
+
+
+
 
     .hero-left {
       position: absolute;
