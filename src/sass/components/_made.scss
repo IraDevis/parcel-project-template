@@ -182,7 +182,7 @@ ul {
   background: $main-color;
   border-radius: 22px;
   cursor: pointer;
-
+  transition: background-color 250ms $time-function;
   @media screen and(min-width:$tablet) {
     margin-left: auto;
   }
