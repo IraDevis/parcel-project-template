@@ -1,12 +1,15 @@
-  .hero {
-    width: 100;
+  #hero {
     background-repeat: no-repeat;
     background-color: $product-block-color-first;
     height: 502px;
-    position: relative;
+
+    .hero-discription {
+      position: relative;
+    }
 
     .hero-circle {
       position: absolute;
+
       top: 75px;
       left: 36px;
 
@@ -29,6 +32,7 @@
     }
 
     .hero-text {
+
       height: 502px;
       font-family: "Titan One";
       padding-top: 193px;
@@ -103,7 +107,7 @@
     top: 38%;
   }
 
-  .hero {
+  #hero {
     @media screen and (max-width: 767px) {
 
       .hero-right,
