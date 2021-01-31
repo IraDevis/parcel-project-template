@@ -233,10 +233,18 @@
         border-radius: 50%;
         background-color: $main-color;
 
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+
         svg {
           width: 7px;
         }
       }
+    }
+
+    .link:hover,
+    .link:focus {
+      background-color: $secondary-btn-color-focus;
     }
 
     @media screen and (min-width:$desktop) {
