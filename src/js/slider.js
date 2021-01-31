@@ -1,6 +1,6 @@
 // $(document).ready(function(){
 	$('.review-slider').slick({
-		arrows:true,
+ 	  arrows:false,
 		dots:true,
 		slidesToShow:1,
 		autoplay:true,

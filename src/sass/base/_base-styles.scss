@@ -1,6 +1,12 @@
+body {
+  font-family: DM Sans;
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   outline: none;
+  color: currentColor;
   cursor: pointer;
 }
 
@@ -10,7 +16,7 @@ a {
 }
 
 button {
-  border-radius: 50%;
+  border-radius: 21px;
   border-color: transparent;
 
   &:hover {
