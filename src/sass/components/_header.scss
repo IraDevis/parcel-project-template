@@ -1,21 +1,16 @@
 .page-header {
-  // position: absolute;
-  // width: 100%;
-  // height: 100%;
-  background-color: $accent-pink-color;
+  @include position(absolute);
 }
 
 .header-container {
   position: relative;
-  display: flex;
-  align-items: center;
+  @extend %flex-linecenter;
   justify-content: space-between;
   background-color: transparent;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  @extend %flex-linecenter;
   padding-top: 6px;
   padding-bottom: 6px;
   font-family: Titan One;
@@ -34,9 +29,7 @@
 }
 
 .backdrop {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  @include position(fixed);
   top: 0;
   right: 0;
   padding: 0;
@@ -64,6 +57,7 @@
   height: 100vh;
   background-color: $menu-bg-color;
   box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.25);
+
   transform: translateX(0);
   transition: transform 250ms $time-function;
 
@@ -78,6 +72,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: transparent;
 
   @media screen and (min-width: $tablet) {
     margin-right: 30px;
@@ -98,11 +93,11 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: transparent;
 }
 
 .buy-button {
-  display: flex;
-  align-items: center;
+  @extend %flex-linecenter;
   justify-content: center;
   width: 209px;
   height: 44px;
@@ -112,11 +107,12 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-
   text-align: center;
 
   color: $accent-color;
-  transition: color 250ms $time-function;
+  outline: transparent;
+
+  transition: background-color 250ms $time-function;
 
   &:hover,
   &:focus {
@@ -131,19 +127,19 @@
 }
 
 .nav-buy-button {
-  display: flex;
-  align-items: center;
+  @extend %flex-linecenter;
   justify-content: center;
   width: 160px;
   height: 44px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
-
   text-align: center;
 
   color: $accent-color;
-  transition: color 250ms $time-function;
+  outline: transparent;
+
+  transition: background-color 250ms $time-function;
 
   &:hover,
   &:focus {
@@ -198,8 +194,7 @@
 }
 
 .nav-list-desktop {
-  display: flex;
-  align-items: center;
+  @extend %flex-linecenter;
   justify-content: space-between;
   font-weight: 700;
   font-size: 16px;
