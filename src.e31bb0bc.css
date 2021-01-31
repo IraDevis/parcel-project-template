@@ -524,10 +524,16 @@ p {
     height: 18px;
     border-radius: 50%;
     background-color: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
   }
   #hero .link svg {
     width: 7px;
   }
+}
+#hero .link:hover,
+#hero .link:focus {
+  background-color: #ecebeb;
 }
 @media screen and (min-width: 1200px) {
   #hero {
@@ -1165,7 +1171,7 @@ ul {
 .review-section {
   position: relative;
   padding-top: 154px;
-  padding-bottom: 86px;
+  padding-bottom: 170px;
   background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
@@ -1573,7 +1579,6 @@ ul {
 @media screen and (min-width: 768px) {
   .button-list {
     padding-top: 81px;
-    padding-bottom: 67px;
   }
 }
 
@@ -1587,7 +1592,7 @@ ul {
     padding-right: 15px;
   }
 }
-.button-information .button {
+.button-information .button-loc {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1596,30 +1601,30 @@ ul {
   border-radius: 22px;
 }
 @media screen and (min-width: 768px) {
-  .button-information .button {
+  .button-information .button-loc {
     min-width: 192px;
   }
 }
-.button-information .button.our-locations {
+.button-information .button-loc.our-locations {
   background-color: #d41443;
   color: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-information .button.our-locations:hover, .button-information .button.our-locations:focus {
+.button-information .button-loc.our-locations:hover, .button-information .button-loc.our-locations:focus {
   background-color: #c7133e;
 }
-.button-information .button.our-locations svg {
+.button-information .button-loc.our-locations svg {
   stroke: #ffffff;
 }
-.button-information .button.franchise {
+.button-information .button-loc.franchise {
   background-color: #ffffff;
   color: #d41443;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-information .button.franchise:hover, .button-information .button.franchise:focus {
+.button-information .button-loc.franchise:hover, .button-information .button-loc.franchise:focus {
   background-color: #ecebeb;
 }
-.button-information .button svg {
+.button-information .button-loc svg {
   stroke: #d41443;
 }
 .button-information svg {
