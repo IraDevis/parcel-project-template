@@ -19,7 +19,7 @@
 
     .ice {
       position: absolute;
-      padding-left: 81px;
+      left: 117px;
       bottom: 0%;
     }
 
@@ -91,11 +91,16 @@
   }
 
   // placeholder
-  .number-circle1,
-  .number-circle2 {
+  .number-circle1 {
     @extend %num;
     right: 0%;
     top: 24%;
+  }
+
+  .number-circle2 {
+    @extend %num;
+    right: 0%;
+    top: 38%;
   }
 
   .hero {
@@ -135,7 +140,7 @@
       .hero-circle {
         position: absolute;
         top: 31px;
-        left: 273px;
+        left: 307px;
 
         background-color: $accent-pink-color;
         border-radius: 50%;
@@ -145,7 +150,7 @@
 
       .ice {
         position: absolute;
-        padding-left: 344px;
+        left: 378px;
         bottom: 0%;
       }
 
@@ -247,12 +252,13 @@
 
       .ice {
         position: absolute;
-        padding-left: 476px;
+        left: 479px;
         bottom: 0%;
       }
 
       .hero-text {
         height: 665px;
+        padding-top: 171px;
 
         button {
           margin-top: 25px;
@@ -292,7 +298,7 @@
           .number-circle1 {
 
 
-            top: 14%;
+            top: 25%;
 
             width: 30px;
             height: 30px;
@@ -302,7 +308,7 @@
 
           .number-circle2 {
 
-            top: 27%;
+            top: 38%;
 
             width: 30px;
             height: 30px;
