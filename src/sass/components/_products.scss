@@ -70,8 +70,9 @@
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.04em;
+
+  text-align: center;
   text-transform: uppercase;
 
   color: $accent-color;
@@ -95,7 +96,6 @@
   margin-bottom: 30px;
 
   font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.15;
@@ -122,7 +122,6 @@
   margin-bottom: 15px;
 
   font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.17;
@@ -147,8 +146,7 @@
 .item-descr {
   margin-bottom: 30px;
 
-  font-family: DM Sans;
-  font-style: normal;
+  // font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -179,6 +177,7 @@
   border-radius: 50%;
 
   background-color: $main-color;
+  transition: background-color $time-function;
 
   &:hover {
     background-color: $secondary-btn-color-focus;
