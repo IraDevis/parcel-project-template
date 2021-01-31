@@ -86,9 +86,85 @@
       background: $mark-color;
     }
 
-    .hero-left {
-      width: 218px;
+    @media screen and(max-width:345px) {
+
+      @media screen and (min-resolution: 2dppx) {
+        .hero {
+          background-image: url(/images/mobile/hero/ellipse4@2x.png);
+          background-position: bottom 80px right -50px;
+        }
+      }
+
+      @media screen and (min-resolution: 3dppx) {
+        .hero {
+          background-image: url(/images/mobile/hero/ellipse4@3x.png);
+          background-position: bottom 80px right -50px;
+        }
+      }
+
+
+      background-image: url(/images/mobile/hero/ellipse4.png);
+      background-position: bottom 80px right -50px;
+
+
+
+
+      @media screen and (min-resolution: 2dppx) {
+        .hero-discription {
+          background-image: url(/images/mobile/hero/ice-cream-171@2x.png);
+
+        }
+      }
+
+      @media screen and (min-resolution: 3dppx) {
+        .hero-discription {
+          background-image: url(/images/mobile/hero/ice-cream-171@3x.png);
+
+        }
+      }
+
+      .hero-discription {
+        position: relative;
+        background-image: url(/images/mobile/hero/ice-cream-171@1x.png);
+        background-position: bottom 0 right 50px;
+        background-repeat: no-repeat;
+      }
+
+      .ice {
+        display: none;
+      }
     }
+
+    @media screen and(min-width:346px) {
+      .hero-discription {
+        position: relative;
+      }
+
+      .hero-circle {
+        position: absolute;
+
+        top: 75px;
+        left: 36px;
+
+        background-color: $accent-pink-color;
+        border-radius: 50%;
+        height: 344px;
+        width: 344px;
+
+      }
+
+      .ice {
+        position: absolute;
+        left: 117px;
+        bottom: 0;
+      }
+    }
+
+    .hero-left {
+      position: absolute;
+      z-index: 2;
+          width: 218px;
+    
   }
 }
 
@@ -155,13 +231,10 @@
       bottom: 0%;
     }
 
-    .hero-right {
-      text-align: right;
-    }
 
     .hero-right {
       margin-left: 648px;
-
+text-align: right;
       .number:first-child {
         margin-bottom: 13px;
       }
