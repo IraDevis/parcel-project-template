@@ -8,16 +8,18 @@ ul {
 }
 .made {
   padding-top: 125px;
-  padding-bottom: 97px;
+  padding-bottom: 145px;
   background-color: $secondary-bg-color;
   background-repeat: no-repeat;
   background-position: top 770px left 0px;
   background-size: contain;
   @media screen and(min-width:$tablet) {
     padding-top: 105px;
+    padding-bottom: 241px;
   }
   @media screen and(min-width:$desktop) {
     padding-top: 125px;
+    padding-bottom: 310px;
   }
   @media screen and (min-device-pixel-ratio: 1),
     screen and (min-resolution: 96dpi),
