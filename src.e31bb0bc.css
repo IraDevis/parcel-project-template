@@ -338,23 +338,6 @@ p {
   background-color: #ffb8ca;
   height: 502px;
 }
-#hero .hero-discription {
-  position: relative;
-}
-#hero .hero-circle {
-  position: absolute;
-  top: 75px;
-  left: 36px;
-  background-color: #ffa5ba;
-  border-radius: 50%;
-  height: 344px;
-  width: 344px;
-}
-#hero .ice {
-  position: absolute;
-  left: 117px;
-  bottom: 0%;
-}
 #hero .hero-left {
   position: absolute;
   z-index: 2;
@@ -409,7 +392,71 @@ p {
   background: #e1e1e1;
 }
 #hero .hero-text .hero-left {
+  position: absolute;
+  z-index: 2;
   width: 218px;
+}
+
+@media screen and (max-width: 345px) {
+  #hero {
+    background-image: url(/ellipse4.3309598a.png);
+    background-position: bottom 80px right -50px;
+  }
+}
+@media screen and (max-width: 345px) and (min-resolution: 2dppx) {
+  #hero .hero {
+    background-image: url(/ellipse4@2x.0998bb93.png);
+    background-position: bottom 80px right -50px;
+  }
+}
+@media screen and (max-width: 345px) and (min-resolution: 3dppx) {
+  #hero .hero {
+    background-image: url(/ellipse4@3x.0ea7353b.png);
+    background-position: bottom 80px right -50px;
+  }
+}
+@media screen and (max-width: 345px) and (min-resolution: 2dppx) {
+  #hero .hero-discription {
+    background-image: url(/ice-cream-171@2x.a450cc0c.png);
+  }
+}
+@media screen and (max-width: 345px) and (min-resolution: 3dppx) {
+  #hero .hero-discription {
+    background-image: url(/ice-cream-171@3x.9a9761ab.png);
+  }
+}
+@media screen and (max-width: 345px) {
+  #hero .hero-discription {
+    position: relative;
+    background-image: url(/ice-cream-171@1x.4ec272d6.png);
+    background-position: bottom 0 right 50px;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 345px) {
+  #hero .ice {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 346px) {
+  #hero .hero-discription {
+    position: relative;
+  }
+  #hero .hero-circle {
+    position: absolute;
+    top: 75px;
+    left: 36px;
+    background-color: #ffa5ba;
+    border-radius: 50%;
+    height: 344px;
+    width: 344px;
+  }
+  #hero .ice {
+    position: absolute;
+    left: 117px;
+    bottom: 0;
+  }
 }
 
 .number-circle1 {
@@ -465,10 +512,8 @@ p {
     bottom: 0%;
   }
   #hero .hero-right {
-    text-align: right;
-  }
-  #hero .hero-right {
     margin-left: 648px;
+    text-align: right;
   }
   #hero .hero-right .number:first-child {
     margin-bottom: 13px;
@@ -699,8 +744,8 @@ p {
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.04em;
+  text-align: center;
   text-transform: uppercase;
   color: #d41443;
 }
@@ -722,7 +767,6 @@ p {
 .products-title {
   margin-bottom: 30px;
   font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.15;
@@ -747,7 +791,6 @@ p {
 .products-descr {
   margin-bottom: 15px;
   font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.17;
@@ -771,8 +814,6 @@ p {
 
 .item-descr {
   margin-bottom: 30px;
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -801,6 +842,7 @@ p {
   height: 40px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover {
   background-color: #ecebeb;
@@ -1640,19 +1682,19 @@ ul {
 @media screen and (max-width: 767px) {
   .page-footer {
     width: 100%;
-    padding-bottom: 43px;
+    padding-bottom: 1px;
   }
 }
 @media screen and (min-width: 768px) {
   .page-footer {
     padding-top: 91px;
-    padding-bottom: 91px;
+    padding-bottom: 1px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-footer {
     padding-top: 98px;
-    padding-bottom: 97px;
+    padding-bottom: 1px;
   }
 }
 
@@ -1830,7 +1872,7 @@ ul {
 
 .footer-tel:hover,
 .footer-tel:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* socials-net */
@@ -1875,7 +1917,7 @@ ul {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .link-net {
