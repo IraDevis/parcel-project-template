@@ -85,7 +85,7 @@
 }
 
 #hero {
-  @media screen and(max-width:345px) {
+  @media screen and(max-width:459px) {
 
     @media screen and (min-resolution: 2dppx) {
       .hero {
@@ -136,7 +136,7 @@
 }
 
 #hero {
-  @media screen and(min-width:346px) {
+  @media screen and(min-width:460px) {
     .hero-discription {
       position: relative;
     }
@@ -422,5 +422,3 @@
     }
   }
 }
-
-
