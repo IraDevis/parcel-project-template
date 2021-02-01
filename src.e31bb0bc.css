@@ -3,30 +3,6 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@font-face {
-  font-family: "Titan One";
-  src: local("Titan One"), local("TitanOne"), url("/TitanOne-Regular.c4ed25d0.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DM Sans";
-  src: local("DM Sans Regular"), local("DMSans-Regular"), url("/DMSans-Regular.51277dd6.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DM Sans";
-  src: local("DM Sans Medium"), local("DMSans-Medium"), url("/DMSans-Medium.4e4c8d12.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DM Sans";
-  src: local("DM Sans Bold"), local("DMSans-Bold"), url("/DMSans-Bold.0d25dc20.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
 .number-circle2, .number-circle1 {
   margin-left: auto;
   position: absolute;
@@ -397,35 +373,35 @@ p {
   width: 218px;
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 459px) {
   #hero {
     background-image: url(/ellipse4.3309598a.png);
     background-position: bottom 80px right -50px;
   }
 }
-@media screen and (max-width: 345px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 459px) and (min-resolution: 2dppx) {
   #hero .hero {
     background-image: url(/ellipse4@2x.0998bb93.png);
     background-position: bottom 80px right -50px;
   }
 }
-@media screen and (max-width: 345px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 459px) and (min-resolution: 3dppx) {
   #hero .hero {
     background-image: url(/ellipse4@3x.0ea7353b.png);
     background-position: bottom 80px right -50px;
   }
 }
-@media screen and (max-width: 345px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 459px) and (min-resolution: 2dppx) {
   #hero .hero-discription {
     background-image: url(/ice-cream-171@2x.a450cc0c.png);
   }
 }
-@media screen and (max-width: 345px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 459px) and (min-resolution: 3dppx) {
   #hero .hero-discription {
     background-image: url(/ice-cream-171@3x.9a9761ab.png);
   }
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 459px) {
   #hero .hero-discription {
     position: relative;
     background-image: url(/ice-cream-171@1x.4ec272d6.png);
@@ -433,13 +409,13 @@ p {
     background-repeat: no-repeat;
   }
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 459px) {
   #hero .ice {
     display: none;
   }
 }
 
-@media screen and (min-width: 346px) {
+@media screen and (min-width: 460px) {
   #hero .hero-discription {
     position: relative;
   }
